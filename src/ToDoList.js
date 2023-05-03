@@ -9,7 +9,7 @@ export default function ToDoList(props) {
     
     return(
         <ul className="ToDoList">
-            {todoListItems};
+            {todoListItems}
         </ul>
     );
 }
