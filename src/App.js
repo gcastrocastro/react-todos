@@ -1,6 +1,7 @@
 import './App.css';
 import ToDoList from './ToDoList';
 import {useState} from 'react';
+import NewToDoForm from './NewToDoForm';
 
 // const todos = [
 //   'have fun',
@@ -20,8 +21,10 @@ export default function App() {
     <div className="App">
       <h1>React To-Do</h1>
       {/* Conditionally render ToDoList */}
+      <button onClick={() => setShowTodos(!showTodos)} >Hide</button>
       {showTodos && <ToDoList todos={todos} />}
-      {/* <button onClick={()=> setShowTodos(!showTodos)}>  Toggle Show Todos </button> */}
+      <hr/>
+      <NewToDoForm />
     </div>
   );
 }
