@@ -24,7 +24,7 @@ export default function App() {
       <button onClick={() => setShowTodos(!showTodos)} >Hide</button>
       {showTodos && <ToDoList todos={todos} />}
       <hr/>
-      <NewToDoForm />
+      <NewToDoForm setTodos={setTodos}/>
     </div>
   );
 }
